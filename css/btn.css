@@ -1,0 +1,149 @@
+/* line 5, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/btn.sass */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFE8A3;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+}
+
+/* line 13, ../sass/btn.sass */
+html, body {
+  height: 100%;
+}
+
+/* line 17, ../sass/btn.sass */
+button {
+  border: 5px solid transparent;
+  background: #AED6D1;
+  color: #55706D;
+  border-radius: 40px;
+  padding: 15px 30px;
+  overflow: hidden;
+  width: 200px;
+  transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+  white-space: nowrap;
+  text-indent: 23px;
+  font-weight: bold;
+}
+/* line 29, ../sass/btn.sass */
+button span {
+  display: inline-block;
+  transform: translateX(300px);
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+}
+/* line 36, ../sass/btn.sass */
+button:hover {
+  text-indent: 0;
+  background: #55706D;
+  color: #FFE8A3;
+  width: 250px;
+  border: 10px solid #8DCCC4;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+/* line 43, ../sass/btn.sass */
+button:hover span {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* line 48, ../sass/btn.sass */
+.box {
+  width: 200px;
+  font-size: 2rem;
+  background: #ccc;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  cursor: pointer;
+  transition: border 0.5s 0.5s;
+}
+/* line 58, ../sass/btn.sass */
+.box:hover {
+  animation: slide 0.5s forwards ease-out;
+  border: 5px dotted #333;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(210px);
+  }
+  90% {
+    transform: translateX(190px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
